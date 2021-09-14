@@ -1,8 +1,8 @@
 <header>
   <h1>{{ title.toUpperCase() }}</h1>
   <app-button
-    color="blue"
-    text="Track"
+    color="{{ showAddTask ? 'red' : 'green' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
     (btnClick)="toggleAddTask()"
   ></app-button>
 </header>
